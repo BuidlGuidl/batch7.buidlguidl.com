@@ -69,3 +69,4 @@ contract BatchRegistry is Ownable {
 
     receive() external payable {}
 }
+
