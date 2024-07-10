@@ -16,7 +16,7 @@ const PersonalPage: NextPage = () => {
               Hi there, my name is Oguz, but you can call me Oz or whatever you think sounds similar to Oguz.
             </p>
             <p className="mt-1">
-              I&apos;m from <strong>Izmir, Turkey</strong>, but I&apos;ve lived in different countries and multiple
+              I&apos;m from <strong>Izmir, Turkiye</strong>, but I&apos;ve lived in different countries and multiple
               cities within Turkey.
             </p>
             <p className="mt-1">
