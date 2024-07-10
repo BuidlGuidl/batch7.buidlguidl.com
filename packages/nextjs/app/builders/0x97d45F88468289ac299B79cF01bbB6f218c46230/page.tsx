@@ -1,5 +1,3 @@
-"use client";
-
 import { NextPage } from "next";
 
 const PersonalPage: NextPage = () => {
@@ -15,15 +13,15 @@ const PersonalPage: NextPage = () => {
           <h2 className="text-2xl font-semibold mb-4 text-blue-200">About Me</h2>
           <div className="text-lg text-blue-100">
             <p className="mt-1">
-              Hi there, my name is Oguz but you can call me Oz, or whatever you think would sound similar to Oguz.
+              Hi there, my name is Oguz, but you can call me Oz or whatever you think sounds similar to Oguz.
             </p>
             <p className="mt-1">
-              I&apos;m from <strong>Izmir, Turkey</strong> but I&apos;ve lived in different countries and multiple
+              I&apos;m from <strong>Izmir, Turkey</strong>, but I&apos;ve lived in different countries and multiple
               cities within Turkey.
             </p>
             <p className="mt-1">
               I&apos;ve been working as a full-stack web developer since 2020. <strong>Web3</strong> caught my attention
-              with the help of a friend and now I am trying my best to be a part of this decentralized world.
+              with the help of a friend, and now I am trying my best to be a part of this decentralized world.
             </p>
           </div>
         </section>
