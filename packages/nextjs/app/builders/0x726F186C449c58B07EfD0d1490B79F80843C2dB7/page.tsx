@@ -1,10 +1,8 @@
-"use client";
-
 import Link from "next/link";
 import type { NextPage } from "next";
 import { ArrowLeftIcon } from "@heroicons/react/24/outline";
 
-const Home: NextPage = () => {
+const BuilderPage: NextPage = () => {
   return (
     <>
       <Link href="/builders" passHref>
@@ -56,14 +54,14 @@ const Home: NextPage = () => {
                 <h2 className="text-xl font-semibold mb-4">Let&apos;s Get in Touch</h2>
                 <ul className="list-none space-y-2">
                   <li>
-                    <Link href="https://x.com/I_Cherny" className="link">
+                    <a href="https://x.com/I_Cherny" className="link" target="_blank">
                       Twitter
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link href="https://github.com/fels21" className="link">
+                    <a href="https://github.com/fels21" className="link" target="_blank">
                       GitHub
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -91,4 +89,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default BuilderPage;
