@@ -1,1 +1,1 @@
-export * from "./BatchMember";
+export * from "./BatchMemberStatuses";

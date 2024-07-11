@@ -1,10 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useScaffoldEventHistory, useScaffoldReadContract } from "../../hooks/scaffold-eth";
-import { ZERO_ADDRESS } from "../../utils/scaffold-eth/common";
+import { Address } from "viem";
 import { useAccount } from "wagmi";
 import { CheckCircleIcon, UserGroupIcon } from "@heroicons/react/24/outline";
+import { useScaffoldEventHistory, useScaffoldReadContract } from "~~/hooks/scaffold-eth";
+import { ZERO_ADDRESS } from "~~/utils/scaffold-eth/common";
 
 const SkeletonLoader = () => (
   <div className="flex gap-2 animate-pulse">
@@ -13,30 +14,30 @@ const SkeletonLoader = () => (
   </div>
 );
 
-export const BatchMember = () => {
+export const BatchMemberStatuses = () => {
   const { address: connectedAddress, status } = useAccount();
 
   const [isCheckedIn, setIsCheckedIn] = useState(false);
 
-  const { data: checkIns } = useScaffoldEventHistory({
+  const { data: checkIns, isLoading: isCheckInsInfoLoading } = useScaffoldEventHistory({
     contractName: "BatchRegistry",
     eventName: "CheckedIn",
-    fromBlock: 0n,
+    fromBlock: 122221841n,
   });
 
-  const { data: isInAllowList } = useScaffoldReadContract({
+  const { data: isInAllowList, isLoading: isInAllowListLoading } = useScaffoldReadContract({
     contractName: "BatchRegistry",
     functionName: "allowList",
-    args: [connectedAddress ?? ZERO_ADDRESS],
+    args: [(connectedAddress?.toLowerCase() as Address) ?? ZERO_ADDRESS],
   });
 
   useEffect(() => {
     if (checkIns?.length && connectedAddress) {
-      setIsCheckedIn(checkIns.some(checkIn => checkIn.args.builder === connectedAddress));
+      setIsCheckedIn(checkIns.some(checkIn => checkIn.args.builder?.toLowerCase() === connectedAddress.toLowerCase()));
     }
   }, [checkIns, connectedAddress]);
 
-  if (status === "connecting" || status === "reconnecting") {
+  if (status === "connecting" || status === "reconnecting" || isCheckInsInfoLoading || isInAllowListLoading) {
     return <SkeletonLoader />;
   }
 
@@ -54,7 +55,7 @@ export const BatchMember = () => {
       </div>
       <div
         className="tooltip tooltip-secondary tooltip-bottom"
-        data-tip={isCheckedIn ? "You are in the allow list." : "You are not in the allow list."}
+        data-tip={isInAllowList ? "You are in the allow list." : "You are not in the allow list."}
       >
         <UserGroupIcon className={`${isInAllowList ? "text-green-400" : "text-gray-400"} h-6 w-6`}></UserGroupIcon>
       </div>

@@ -7,7 +7,7 @@ import { AddressQRCodeModal } from "./AddressQRCodeModal";
 import { WrongNetworkDropdown } from "./WrongNetworkDropdown";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { Address } from "viem";
-import { BatchMember } from "~~/app/_components";
+import { BatchMemberStatuses } from "~~/app/_components";
 import { useNetworkColor } from "~~/hooks/scaffold-eth";
 import { useTargetNetwork } from "~~/hooks/scaffold-eth/useTargetNetwork";
 import { getBlockExplorerAddressLink } from "~~/utils/scaffold-eth";
@@ -45,7 +45,7 @@ export const RainbowKitCustomConnectButton = () => {
               return (
                 <>
                   <div className="flex mr-2">
-                    <BatchMember></BatchMember>
+                    <BatchMemberStatuses></BatchMemberStatuses>
                   </div>
                   <div className="flex flex-col items-center mr-1">
                     <Balance address={account.address as Address} className="min-h-0 h-auto" />
