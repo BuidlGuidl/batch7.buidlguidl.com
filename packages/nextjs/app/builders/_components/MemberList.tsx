@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Address } from "~~/components/scaffold-eth";
@@ -16,7 +18,6 @@ export const MemberList = () => {
     contractName: "BatchRegistry",
     eventName: "CheckedIn",
     fromBlock: 122221841n,
-    watch: true,
   });
 
   const [validPages, setValidPages] = useState<ValidPages>({});
@@ -52,6 +53,9 @@ export const MemberList = () => {
       </div>
     );
 
+  // Filter events to only include those where `first` is true
+  const firstCheckInEvents = events.filter(event => event.args.first);
+
   return (
     <div className="container mx-auto p-4">
       <table className="table-auto w-full text-left border-collapse">
@@ -62,7 +66,7 @@ export const MemberList = () => {
           </tr>
         </thead>
         <tbody>
-          {events.map(event => {
+          {firstCheckInEvents.map(event => {
             const builderAddress = event.args.builder;
             if (!builderAddress) return null; // skip if no builder address
             const isPageValid = validPages[builderAddress];

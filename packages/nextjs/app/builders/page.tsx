@@ -1,5 +1,3 @@
-"use client";
-
 import { MemberList } from "./_components/MemberList";
 import { SparklesIcon } from "@heroicons/react/24/outline";
 
