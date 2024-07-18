@@ -20,6 +20,10 @@ export const menuLinks: HeaderMenuLink[] = [
     href: "/",
   },
   {
+    label: "QuadCores Profile",
+    href: "/builders/0x61F4c9bB022dFF50d213F007E6b5004b54543E3C",
+  },
+  {
     label: "Debug Contracts",
     href: "/debug",
     icon: <BugAntIcon className="h-4 w-4" />,
