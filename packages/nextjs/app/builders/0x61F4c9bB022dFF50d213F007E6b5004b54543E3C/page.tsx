@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { NextPage } from "next";
 import { getMetadata } from "~~/utils/scaffold-eth/getMetadata";
 
@@ -10,10 +11,12 @@ const Profile: NextPage = () => {
   return (
     <div className="min-h-screen bg-gray-900 text-gray-200 p-10">
       <header className="text-center py-5 relative">
-        <img
+        <Image
           src="/nietzsche.jpeg"
           alt="QuadCore's Photo"
-          className="absolute top-0 left-0 w-30 h-30 rounded-full object-cover m-4 border-4 border-gray-800"
+          width={128}
+          height={128}
+          className="absolute top-0 left-0 rounded-full object-cover m-4 border-4 border-gray-800"
         />
         <h1 className="text-5xl font-bold text-white">QuadCore&apos;s Career Profile</h1>
         <p className="text-xl text-gray-400 mt-2">Mid-Level Smart Contract Developer</p>
