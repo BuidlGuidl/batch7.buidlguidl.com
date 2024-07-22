@@ -47,12 +47,14 @@ export const BatchMemberStatuses = () => {
 
   return (
     <div className="flex gap-2">
-      <div
-        className="tooltip tooltip-secondary tooltip-bottom"
-        data-tip={isCheckedIn ? "You are checked-in." : "You are not checked-in."}
-      >
-        <CheckCircleIcon className={`${isCheckedIn ? "text-green-400" : "text-gray-400"} h-6 w-6`}></CheckCircleIcon>
-      </div>
+      {isInAllowList ? (
+        <div
+          className="tooltip tooltip-secondary tooltip-bottom"
+          data-tip={isCheckedIn ? "You are checked-in." : "You are not checked-in."}
+        >
+          <CheckCircleIcon className={`${isCheckedIn ? "text-green-400" : "text-gray-400"} h-6 w-6`}></CheckCircleIcon>
+        </div>
+      ) : null}
       <div
         className="tooltip tooltip-secondary tooltip-bottom"
         data-tip={isInAllowList ? "You are in the allow list." : "You are not in the allow list."}
