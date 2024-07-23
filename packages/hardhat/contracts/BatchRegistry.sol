@@ -5,8 +5,9 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract BatchRegistry is Ownable {
 
-    uint256 constant CHECK_IN_REWARD = 0.01 ether;
 
+    uint256 constant CHECK_IN_REWARD = 0.01 ether;
+ 
     mapping(address => bool) public allowList;
     mapping(address => address) public yourContractAddress;
     bool public isOpen = true;
