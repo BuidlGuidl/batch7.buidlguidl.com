@@ -45,7 +45,7 @@ export const RainbowKitCustomConnectButton = () => {
               return (
                 <>
                   <div className="flex mr-2">
-                    <BatchMemberStatuses></BatchMemberStatuses>
+                    <BatchMemberStatuses />
                   </div>
                   <div className="flex flex-col items-center mr-1">
                     <Balance address={account.address as Address} className="min-h-0 h-auto" />
