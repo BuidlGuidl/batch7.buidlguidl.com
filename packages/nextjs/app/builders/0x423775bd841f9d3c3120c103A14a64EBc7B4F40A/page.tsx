@@ -30,15 +30,16 @@ const EvilPage: NextPage = () => {
           <div className="max-w-md">
             <h1 className="text-4xl font-bold">Hey Fren</h1>
             <p className="py-1">
-              I&apos;m 3vil7win (ET for short), a creative developer primarily interested in Three.js/WebGL and
-              EVM/Solidity.
+              I&apos;m <b>3vil7win</b> (<b>Evil</b> or <b>ET</b> for short), a creative developer primarily interested
+              in <b>Three.js/WebGL</b> and <b>EVM/Solidity</b>.
             </p>
             <p className="py-1">
               My programming journey began with Lego Dacta and a TI-83 calculator, and I&apos;ve followed web3 off and
               on since the Mt.Gox and BTC-e trollbox days.
             </p>
             <p className="py-1">
-              I&apos;m excited to join BuidlGuidl to work on my chops, meet other builders, and make some cool OSS.
+              I&apos;m excited to join <b>BuidlGuidl</b> to work on my chops, meet other builders, and make some cool
+              OSS.
             </p>
             <div className="flex justify-center gap-3 pt-3">
               <SocialButton title="Github" href="https://github.com/3vil7win">
