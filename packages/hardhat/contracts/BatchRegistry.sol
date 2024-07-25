@@ -2,8 +2,8 @@
 pragma solidity >=0.8.0 <0.9.0;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
-
-contract BatchRegistry is Ownable {
+import "./IBatchRegistry.sol";
+contract BatchRegistry is Ownable, IBatchRegistry {
 
     uint256 constant CHECK_IN_REWARD = 0.01 ether;
 
