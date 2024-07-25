@@ -5,47 +5,6 @@
 import { GenericContractsDeclaration } from "~~/utils/scaffold-eth/contract";
 
 const deployedContracts = {
-  10: {
-    CheckIn: {
-      address: "0xDaB4c4F07f13Df8D0b5770dD1021c4DA8040cd06",
-      abi: [
-        {
-          inputs: [
-            {
-              internalType: "address",
-              name: "_batchRegistry",
-              type: "address",
-            },
-          ],
-          stateMutability: "nonpayable",
-          type: "constructor",
-        },
-        {
-          inputs: [],
-          name: "batchRegistry",
-          outputs: [
-            {
-              internalType: "address",
-              name: "",
-              type: "address",
-            },
-          ],
-          stateMutability: "view",
-          type: "function",
-        },
-        {
-          inputs: [],
-          name: "checkIn",
-          outputs: [],
-          stateMutability: "nonpayable",
-          type: "function",
-        },
-      ],
-      inheritedFunctions: {
-        checkIn: "contracts/IBatchRegistry.sol",
-      },
-    },
-  },
   31337: {
     BatchRegistry: {
       address: "0x5FbDB2315678afecb367f032d93F642f64180aa3",
