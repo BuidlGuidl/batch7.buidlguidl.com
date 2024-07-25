@@ -17,7 +17,7 @@ const GunerivBuilderPage = () => {
           </p>
           <ul className="flex flex-row md:flex-col gap-3">
             <li>
-              <a className="underline pointer" href="https://twitter.com/Volkan_Guneri_/" target="_blank">
+              <a className="underline pointer" href="https://volkanguneri.github.io/portfolio-front/" target="_blank">
                 Portfolio
               </a>
             </li>
