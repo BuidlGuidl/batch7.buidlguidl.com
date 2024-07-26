@@ -8,7 +8,7 @@ const GunerivBuilderPage = () => {
           <div className="flex justify-center md:justify-end md:items-end w-full mb-5 md:mb-0">
             <Image
               src="/img_PP_guneriv.eth/V_BW_Low.jpg"
-              alt="Github Icon"
+              alt="Volkan Guneri"
               width={120}
               height={120}
               className="rounded-lg"
@@ -22,7 +22,7 @@ const GunerivBuilderPage = () => {
             <ul className="flex gap-3 md:text-left md:w-full">
               <li>
                 <a className="pointer" href="https://volkanguneri.github.io/portfolio-front/" target="_blank">
-                  <Image src="/img_PP_guneriv.eth/portfolio_78401.svg" alt="Github Icon" width={24} height={24} />
+                  <Image src="/img_PP_guneriv.eth/portfolio_78401.svg" alt="Portfolio Icon" width={24} height={24} />
                 </a>
               </li>
               <li>
@@ -52,13 +52,32 @@ const GunerivBuilderPage = () => {
             </ul>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row justify-center items-center gap-10">
+        <div className="flex flex-col justify-center items-center">
           <p className="flex-grow text-blue-100 text-justify leading-relaxed max-w-[35em]">
-            Hi! I&apos;m a full-stack smart contract developer actively seeking new open-source contributions,
-            participating in hackathons, and exploring job opportunities within the captivating Web3 domain. I&apos;m
-            enthusiastic about daily learning and growth in this dynamic sector. Don&apos;t hesitate to get in touch
-            with me for any discussion regarding smart contract development.
+            Hi! I&apos;m a <strong>full-stack smart contract developer</strong> actively seeking new{" "}
+            <strong>open-source</strong> contributions, participating in <strong>hackathons</strong>, and exploring{" "}
+            <strong>job opportunities</strong> within the captivating Web3 domain.
+            <br />
+            <br />
+            I&apos;m enthusiastic about <strong>daily learning</strong> and <strong>growth</strong> in this dynamic
+            sector. Don&apos;t hesitate to get in touch with me for any discussion regarding{" "}
+            <strong>smart contract development</strong>.<br />
+            <br />
           </p>
+          <ul className="flex justify-center items-center flex-wrap gap-4 md:gap-6">
+            <li>
+              <strong>Chainlink</strong>
+            </li>
+            <li>
+              <strong>RWA</strong>
+            </li>
+            <li>
+              <strong>Innovative NFT</strong>
+            </li>
+            <li>
+              <strong>Smart Contract Security</strong>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
