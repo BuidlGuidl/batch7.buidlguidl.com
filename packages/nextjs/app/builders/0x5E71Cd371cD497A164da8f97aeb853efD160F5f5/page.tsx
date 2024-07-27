@@ -1,5 +1,18 @@
 import Image from "next/image";
 import type { NextPage } from "next";
+import { FaEnvelope, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+
+// Section component definition
+const Section: React.FC<{ title: string; children: React.ReactNode }> = ({ title, children }) => {
+  return (
+    <section className="bg-white p-6 shadow-md rounded-lg">
+      <h2 className="text-3xl font-semibold mb-4" style={{ color: "#8246E5" }}>
+        {title}
+      </h2>
+      {children}
+    </section>
+  );
+};
 
 const Profile: NextPage = () => {
   return (
@@ -20,43 +33,32 @@ const Profile: NextPage = () => {
       </header>
 
       <main className="max-w-4xl mx-auto mt-10 space-y-8">
-        <section className="bg-white p-6 shadow-md rounded-lg">
-          <h2 className="text-3xl font-semibold mb-4" style={{ color: "#8246E5" }}>
-            Introduction
-          </h2>
+        {/* Use the Section component for each section */}
+        <Section title="Introduction">
           <p>
             I am a final year B.Tech-IT student from India, passionate about building the future with blockchain and web
             development. I am particularly excited about creating decentralized applications (dApps) and exploring the
             cutting-edge technologies that drive innovation in this space.
           </p>
-        </section>
+        </Section>
 
-        <section className="bg-white p-6 shadow-md rounded-lg">
-          <h2 className="text-3xl font-semibold mb-4" style={{ color: "#8246E5" }}>
-            Education
-          </h2>
+        <Section title="Education">
           <ul className="list-disc list-inside ml-4">
             <li>Bachelor of Technology in Information Technology</li>
             <li>Courses in Blockchain and Web3 Security (Cyfrin Updraft)</li>
-            <li>Courses in Web3 Development (Coursera, Udemy and Youtube) </li>
+            <li>Courses in Web3 Development (Coursera, Udemy, and YouTube)</li>
           </ul>
-        </section>
+        </Section>
 
-        <section className="bg-white p-6 shadow-md rounded-lg">
-          <h2 className="text-3xl font-semibold mb-4" style={{ color: "#8246E5" }}>
-            Skills and Expertise
-          </h2>
+        <Section title="Skills and Expertise">
           <ul className="list-disc list-inside ml-4">
             <li>Smart Contracts Development (Solidity)</li>
             <li>TypeScript, JavaScript</li>
             <li>Decentralized Applications (DApps)</li>
           </ul>
-        </section>
+        </Section>
 
-        <section className="bg-white p-6 shadow-md rounded-lg">
-          <h2 className="text-3xl font-semibold mb-4" style={{ color: "#8246E5" }}>
-            Projects
-          </h2>
+        <Section title="Projects">
           <ul className="list-disc list-inside ml-4">
             <li>
               <strong>SecureVote:</strong> A decentralized voting application with Aadhaar authentication, providing
@@ -69,56 +71,37 @@ const Profile: NextPage = () => {
               <strong>DEX(SpeedRun Ethereum):</strong> A decentralized exchange for trading ERC20 tokens and ETH.
             </li>
           </ul>
-        </section>
+        </Section>
 
-        <section className="bg-white p-6 shadow-md rounded-lg">
-          <h2 className="text-3xl font-semibold mb-4" style={{ color: "#8246E5" }}>
-            Contact Me
-          </h2>
+        <Section title="Contact Me">
           <p>Feel free to reach out:</p>
-          <ul>
-            <li>
-              Email:{" "}
-              <a
-                href="mailto:aniketchaudhary9838@gmail.com"
-                className="hover:underline"
-                style={{ color: "#8246E5" }} // Update link color
-              >
+          <ul className="flex flex-col space-y-2">
+            <li className="flex items-center">
+              <FaEnvelope color="#8246E5" />
+              <a href="mailto:aniketchaudhary9838@gmail.com" className="hover:underline text-[#8246E5] px-2">
                 aniketchaudhary9838@gmail.com
               </a>
             </li>
-            <li>
-              LinkedIn:{" "}
-              <a
-                href="https://www.linkedin.com/in/aniket-chaudhary98/"
-                className="hover:underline"
-                style={{ color: "#8246E5" }} // Update link color
-              >
+            <li className="flex items-center">
+              <FaLinkedin color="#8246E5" />
+              <a href="https://www.linkedin.com/in/aniket-chaudhary98/" className="hover:underline text-[#8246E5] px-2">
                 Aniket Chaudhary
               </a>
             </li>
-            <li>
-              GitHub:{" "}
-              <a
-                href="https://github.com/GitAniket98"
-                className="hover:underline"
-                style={{ color: "#8246E5" }} // Update link color
-              >
+            <li className="flex items-center">
+              <FaGithub color="#8246E5" />
+              <a href="https://github.com/GitAniket98" className="hover:underline text-[#8246E5] px-2">
                 GitAniket98
               </a>
             </li>
-            <li>
-              Twitter:{" "}
-              <a
-                href="https://x.com/eth_ch0w"
-                className="hover:underline"
-                style={{ color: "#8246E5" }} // Update link color
-              >
+            <li className="flex items-center">
+              <FaTwitter color="#8246E5" />
+              <a href="https://x.com/eth_ch0w" className="hover:underline text-[#8246E5] px-2">
                 eth_ch0w
               </a>
             </li>
           </ul>
-        </section>
+        </Section>
       </main>
     </div>
   );
