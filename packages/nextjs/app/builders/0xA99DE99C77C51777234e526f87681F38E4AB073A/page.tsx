@@ -3,17 +3,17 @@ import Link from "next/link";
 
 const HomePage = () => {
   return (
-    <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-3xl mx-auto bg-white shadow-md rounded-lg overflow-hidden">
-        <header className="bg-gray-800 text-white py-6 px-8">
+    <div className="min-h-screen bg-base-200 py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-3xl mx-auto bg-base-100 shadow-md rounded-lg overflow-hidden">
+        <header className="bg-primary text-primary-content py-6 px-8">
           <h1 className="text-3xl font-bold">Hani Atta</h1>
           <p className="text-xl mt-2">Backend Engineer</p>
         </header>
 
         <main className="p-8">
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-700 mb-4 border-b pb-2">Introduction</h2>
-            <p className="text-gray-600 leading-relaxed">
+            <h2 className="text-2xl font-semibold text-primary-content mb-4 border-b pb-2">Introduction</h2>
+            <p className="text-base-content leading-relaxed">
               Hello! I&apos;m Hani, a Software Developer from Kerala, India. I&apos;ve been working as a Backend
               Developer for about a year now. I&apos;ve been keen on the Crypto space for quite some time. Design
               isn&apos;t something I&apos;m good at. I&apos;m really looking forward to growing as much as I can by
@@ -25,12 +25,12 @@ const HomePage = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-gray-700 mb-4 border-b pb-2">Contact Me</h2>
-            <p className="text-gray-600 mb-4">
+            <h2 className="text-2xl font-semibold text-primary-content mb-4 border-b pb-2">Contact Me</h2>
+            <p className="text-base-content mb-4">
               I&apos;m always open to new opportunities and collaborations. Feel free to reach out to me through any of
               the following channels:
             </p>
-            <ul className="space-y-2 text-gray-600">
+            <ul className="space-y-2 text-base-content">
               <li className="flex items-center">
                 <svg className="w-5 h-5 mr-2 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
