@@ -1,6 +1,6 @@
 # Welcome to your BuidlGuidl Batch!
 
-🧨 Congratulations on joining a BuidlGuidl Batch! You've completed SpeedRunEthereum and gotten your feet wet in Scaffold-ETH, Solidity coding, deploying contracts, and basic front-end development.  Now it's time to take the next step on your educational journey!  
+🧨 Congratulations on joining a BuidlGuidl Batch! You've completed Speedrun Ethereum and gotten your feet wet in Scaffold-ETH, Solidity coding, deploying contracts, and basic front-end development.  Now it's time to take the next step on your educational journey!  
 
 🧙‍♂️ Along with your fellow batch members and BuidlGuidl mentors you'll learn how to collaborate, meaningfully contribute to GitHub repositories, create and handle issues and pull requests, follow best practices in version control, and dive deeper into full-scale dApp development.
 

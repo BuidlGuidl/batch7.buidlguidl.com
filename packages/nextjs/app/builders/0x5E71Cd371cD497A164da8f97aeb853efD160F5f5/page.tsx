@@ -68,7 +68,7 @@ const Profile: NextPage = () => {
               <strong>BUY-me-chai:</strong> A platform for donating cryptocurrency to content creators.
             </li>
             <li>
-              <strong>DEX(SpeedRun Ethereum):</strong> A decentralized exchange for trading ERC20 tokens and ETH.
+              <strong>DEX(Speedrun Ethereum):</strong> A decentralized exchange for trading ERC20 tokens and ETH.
             </li>
           </ul>
         </Section>
